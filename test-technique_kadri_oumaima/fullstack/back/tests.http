@@ -1,0 +1,121 @@
+### GET Users
+GET http://localhost:8080/
+Accept: application/json
+
+### POST User
+POST http://localhost:8080/
+Content-Type: application/json
+
+{
+  "first_name" : "Pénélope",
+  "last_name" : "Deschamps",
+  "mail" : "PenelopeDeschamps@teleworm.us",
+  "phone_number" : "0139477317",
+  "company" : "S&W Bike",
+  "location" : {
+    "address" : "74, Rue St Ferréol",
+    "city" : "MEUDON-LA-FORÊT",
+    "zipcode" : 92360
+  },
+  "card" : {
+    "id" : 5463306337047971,
+    "expiration" : "1/2023",
+    "cvc2" : 872
+  }
+}
+
+### PUT User
+PUT http://localhost:8080/{{uid}}
+Content-Type: application/json
+
+{
+  "first_name" : "Pénélope",
+  "last_name" : "Deschamps",
+  "mail" : "PenelopeDeschamps@teleworm.us",
+  "phone_number" : "0139477317",
+  "company" : "S&W Bike",
+  "location" : {
+    "address" : "74, Rue St Ferréol",
+    "city" : "MEUDON-LA-FORÊT",
+    "zipcode" : 92360
+  },
+  "card" : {
+    "id" : 5463306337047971,
+    "expiration" : "1/2023",
+    "cvc2" : 872
+  }
+}
+
+### Delete User
+DELETE http://localhost:8080/{{uid}}
+Accept: application/json
+
+### GET Contracts
+GET http://localhost:8080/{{uid}}/contracts
+Accept: application/json
+
+### POST Contract
+POST http://localhost:8080/{{uid}}/contracts
+Content-Type: application/json
+
+{
+  "uid" : "72c47204-1937-4a52-a76b-e9e38a81c626",
+  "start_date" : 1655670181443,
+  "end_date" : "1655670481988",
+  "creation_date": 1655670181443,
+  "last_update" : 1655670181443,
+  "object_type" : "Velo",
+  "price" : "50",
+  "item": {
+    "0" : "9ca879c9-b035"
+  }
+}
+
+### PUT Contract
+PUT http://localhost:8080/{{uid}}/contracts/{{cid}}
+Content-Type: application/json
+
+{
+  "uid" : "72c47204-1937-4a52-a76b-e9e38a81c626",
+  "start_date" : 1655670181443,
+  "end_date" : "1655670481988",
+  "creation_date": 1655670181443,
+  "last_update" : 1655670181443,
+  "object_type" : "Velo",
+  "price" : "50",
+  "item": {
+    "0" : "9ca879c9-b035"
+  }
+}
+
+### Delete Contract
+DELETE http://localhost:8080/{{uid}}/contracts/{{cid}}
+Accept: application/json
+
+### GET User Items
+GET http://localhost:8080/{{uid}}/items
+Accept: application/json
+
+### POST Contract
+POST http://localhost:8080/{{uid}}/items
+Content-Type: application/json
+
+{
+  "name" : "BMX SuperFast",
+  "internal_id" : "PA-WB-1",
+  "price" : 150
+}
+
+### PUT Contract
+PUT http://localhost:8080/{{uid}}/items/{{cid}}
+Content-Type: application/json
+
+{
+  "name" : "BMX SuperFast",
+  "internal_id" : "PA-WB-1",
+  "price" : 150
+}
+
+### Delete Contract
+DELETE http://localhost:8080/{{uid}}/items/{{cid}}
+Accept: application/json

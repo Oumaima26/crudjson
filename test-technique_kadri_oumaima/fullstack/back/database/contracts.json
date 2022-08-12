@@ -1,0 +1,27 @@
+{
+    "7A8CA070FBE8480980158D2D1749C834": {
+        "uid": "72c47204-1937-4a52-a76b-e9e38a81c626",
+        "start_date": 1655670181443,
+        "end_date": "1655670481988",
+        "creation_date": 1655670181443,
+        "last_update": 1655670181443,
+        "object_type": "Velo",
+        "price": "500",
+        "item": {
+            "0": "9ca879c9-b035"
+        }
+    },
+    "4ea1c126-03e7-4872-a226-4c0bd2d4fe5f": {
+        "uid": "2e203ab7-7628-417a-a550-2df30f24e504",
+        "start_date": 1655670181443,
+        "end_date": "1655670481988",
+        "creation_date": 1655670181443,
+        "last_update": 1655670181443,
+        "object_type": "Velo",
+        "price": "5000",
+        "item": {
+            "0": "9ca879c9-b035",
+            "1": "9ca879c9-b037"
+        }
+    }
+}
